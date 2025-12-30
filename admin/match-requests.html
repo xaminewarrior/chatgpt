@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Match Requests | StadiumX</title>
+  <link rel="stylesheet" href="../styles/main.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <div class="brand">
+        <div class="brand-logo">SX</div>
+        Admin Control
+      </div>
+      <nav class="nav-links">
+        <a href="dashboard.html">Dashboard</a>
+        <a class="active" href="match-requests.html">Match Requests</a>
+        <a href="users.html">User Management</a>
+        <a href="../comments.html">Moderation</a>
+      </nav>
+      <button class="btn">Bulk Review</button>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Pending Match Submissions</h2>
+        <span class="subtle">Approve or decline upcoming events.</span>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=600&q=80" alt="Match banner" style="border-radius: 14px; margin-bottom: 14px;" />
+          <h3>Skyline Kings vs Fire Wolves</h3>
+          <p class="subtle">Organizer: Stormline Events</p>
+          <div class="form-actions">
+            <button class="btn btn-green">Approve ✅</button>
+            <button class="btn btn-red">Decline ❌</button>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=600&q=80" alt="Match banner" style="border-radius: 14px; margin-bottom: 14px;" />
+          <h3>River Titans vs Storm Saints</h3>
+          <p class="subtle">Organizer: Harbor Sports</p>
+          <div class="form-actions">
+            <button class="btn btn-green">Approve ✅</button>
+            <button class="btn btn-red">Decline ❌</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    StadiumX Admin • Review interface
+  </footer>
+  <script src="../scripts/app.js"></script>
+</body>
+</html>

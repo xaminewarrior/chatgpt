@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buy Ticket | StadiumX</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <div class="brand">
+        <div class="brand-logo">SX</div>
+        StadiumX Arena
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="matches.html">Matches</a>
+        <a class="active" href="buy-ticket.html">Buy Ticket</a>
+        <a href="my-tickets.html">My Tickets</a>
+      </nav>
+      <button class="btn">Checkout</button>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container split">
+      <div class="panel">
+        <h2>Match Summary</h2>
+        <p class="subtle">City Cyclones vs North Giants • Capital City Dome</p>
+        <div class="match-meta">
+          <span>July 20 • 8:30 PM</span>
+          <span>Duration: 120 mins</span>
+        </div>
+        <div class="section" style="padding: 20px 0 0;">
+          <h3>Select Category</h3>
+          <div class="card-grid">
+            <div class="card">
+              <h4>Normal</h4>
+              <p class="subtle">$25 • General seating</p>
+            </div>
+            <div class="card glow-border">
+              <h4>Premium</h4>
+              <p class="subtle">$45 • Prime viewing</p>
+            </div>
+            <div class="card">
+              <h4>VIP</h4>
+              <p class="subtle">$85 • Lounge access</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3>Seat & Quantity</h3>
+        <form class="form-grid" action="php/buy-ticket.php" method="post">
+          <div class="input-group">
+            <label for="seat">Seat Preference</label>
+            <select id="seat" name="seat">
+              <option>Lower Deck</option>
+              <option>Upper Deck</option>
+              <option>Suite Lounge</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="quantity">Quantity</label>
+            <select id="quantity" name="quantity">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </div>
+          <button class="btn btn-green" type="submit">Confirm Purchase</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    StadiumX Purchase Flow • Neon highlights
+  </footer>
+  <script src="scripts/app.js"></script>
+</body>
+</html>
