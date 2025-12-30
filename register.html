@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register | StadiumX</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <div class="brand">
+        <div class="brand-logo">SX</div>
+        StadiumX Arena
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="matches.html">Matches</a>
+        <a class="active" href="register.html">Register</a>
+        <a href="login.html">Login</a>
+      </nav>
+      <button class="btn">Join Now</button>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container" style="max-width: 720px;">
+      <div class="form-card glow-border">
+        <h2>Create Your StadiumX Account</h2>
+        <p class="subtle">Choose your role and unlock the neon experience.</p>
+        <form class="form-grid" action="php/register.php" method="post">
+          <div class="input-group">
+            <label for="full-name">Full Name</label>
+            <input id="full-name" name="full_name" type="text" placeholder="Full name" />
+          </div>
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="name@email.com" />
+          </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" placeholder="Create a password" />
+          </div>
+          <div class="input-group">
+            <label>Role</label>
+            <div class="toggle-group">
+              <label><input type="radio" name="role" value="buyer" checked /> Buyer</label>
+              <label><input type="radio" name="role" value="organizer" /> Organizer</label>
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="org-name">Organization Name (Organizer)</label>
+            <input id="org-name" name="org_name" type="text" placeholder="Organization name" />
+          </div>
+          <div class="input-group">
+            <label for="org-logo">Organization Logo</label>
+            <input id="org-logo" name="org_logo" type="file" />
+          </div>
+          <div class="form-actions">
+            <button class="btn" type="submit">Create Account</button>
+            <button class="btn btn-outline" type="reset">Reset</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    StadiumX Registration • PHP-ready placeholders
+  </footer>
+  <script src="scripts/app.js"></script>
+</body>
+</html>

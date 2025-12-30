@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Event | StadiumX</title>
+  <link rel="stylesheet" href="../styles/main.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <div class="brand">
+        <div class="brand-logo">SX</div>
+        Organizer Console
+      </div>
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a class="active" href="new-event.html">Create Event</a>
+        <a href="../comments.html">Moderation</a>
+      </nav>
+      <button class="btn">Submit</button>
+    </div>
+  </header>
+
+  <section class="banner">
+    <div class="container">
+      <h1>Create a New Match</h1>
+      <p class="subtle">Launch a stadium-ready event with neon validation cues.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="max-width: 900px;">
+      <div class="form-card">
+        <form class="form-grid" action="../php/new-event.php" method="post">
+          <div class="input-group">
+            <label for="team-a">Team A Name</label>
+            <input id="team-a" name="team_a" type="text" placeholder="Team A" required />
+          </div>
+          <div class="input-group">
+            <label for="team-a-logo">Team A Logo</label>
+            <input id="team-a-logo" name="team_a_logo" type="file" required />
+          </div>
+          <div class="input-group">
+            <label for="team-b">Team B Name</label>
+            <input id="team-b" name="team_b" type="text" placeholder="Team B" required />
+          </div>
+          <div class="input-group">
+            <label for="team-b-logo">Team B Logo</label>
+            <input id="team-b-logo" name="team_b_logo" type="file" required />
+          </div>
+          <div class="input-group">
+            <label for="match-banner">Match Banner</label>
+            <input id="match-banner" name="match_banner" type="file" required />
+          </div>
+          <div class="input-group">
+            <label for="match-date">Match Date</label>
+            <input id="match-date" name="match_date" type="date" required />
+          </div>
+          <div class="input-group">
+            <label for="match-time">Match Time</label>
+            <input id="match-time" name="match_time" type="time" required />
+          </div>
+          <div class="input-group">
+            <label for="match-location">Location</label>
+            <input id="match-location" name="location" type="text" placeholder="Stadium name" required />
+          </div>
+          <div class="input-group">
+            <label for="match-duration">Duration</label>
+            <input id="match-duration" name="duration" type="number" placeholder="Minutes" required />
+          </div>
+          <div class="input-group">
+            <label for="max-seats">Max Seats (≤2000)</label>
+            <input id="max-seats" name="max_seats" type="number" max="2000" placeholder="2000" required />
+          </div>
+          <div class="input-group">
+            <label>Category 1</label>
+            <div class="split">
+              <input name="category_1_name" type="text" placeholder="Name" required />
+              <input name="category_1_price" type="number" placeholder="Price" required />
+            </div>
+          </div>
+          <div class="input-group">
+            <label>Category 2</label>
+            <div class="split">
+              <input name="category_2_name" type="text" placeholder="Name" required />
+              <input name="category_2_price" type="number" placeholder="Price" required />
+            </div>
+          </div>
+          <div class="input-group">
+            <label>Category 3</label>
+            <div class="split">
+              <input name="category_3_name" type="text" placeholder="Name" required />
+              <input name="category_3_price" type="number" placeholder="Price" required />
+            </div>
+          </div>
+          <div class="form-actions">
+            <button class="btn" type="submit">Create Match</button>
+            <button class="btn btn-outline" type="reset">Reset</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    StadiumX Organizer • New event creation
+  </footer>
+  <script src="../scripts/app.js"></script>
+</body>
+</html>

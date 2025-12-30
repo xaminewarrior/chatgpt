@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Match Listings | StadiumX</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <div class="brand">
+        <div class="brand-logo">SX</div>
+        StadiumX Arena
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a class="active" href="matches.html">Matches</a>
+        <a href="buy-ticket.html">Buy Ticket</a>
+        <a href="my-tickets.html">My Tickets</a>
+      </nav>
+      <button class="btn">Sign In</button>
+    </div>
+  </header>
+
+  <section class="banner">
+    <div class="container">
+      <h1>Match Listings</h1>
+      <p class="subtle">Scroll through Twitch-style match cards and filter the action.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Showing 6 matches</h2>
+        <span class="subtle">Twitch-inspired cards with full match details.</span>
+      </div>
+      <div class="filter-bar">
+        <div class="input-group">
+          <label for="city">City</label>
+          <select id="city">
+            <option>All Cities</option>
+            <option>Nova City</option>
+            <option>Harbor City</option>
+            <option>Capital City</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="date">Date</label>
+          <input id="date" type="date" />
+        </div>
+        <div class="input-group">
+          <label for="category">Category</label>
+          <select id="category">
+            <option>All Categories</option>
+            <option>Normal</option>
+            <option>Premium</option>
+            <option>VIP</option>
+          </select>
+        </div>
+        <button class="btn btn-outline">Apply Filters</button>
+      </div>
+
+      <div class="card-grid">
+        <article class="card match-card">
+          <div class="team-row">
+            <div class="team">
+              <div class="team-logo">CC</div>
+              <strong>City Cyclones</strong>
+            </div>
+            <span>VS</span>
+            <div class="team">
+              <div class="team-logo">NG</div>
+              <strong>North Giants</strong>
+            </div>
+          </div>
+          <div class="match-meta">
+            <span>July 20 • 8:30 PM</span>
+            <span>Capital City Dome</span>
+          </div>
+          <button class="btn">See Details</button>
+        </article>
+        <article class="card match-card">
+          <div class="team-row">
+            <div class="team">
+              <div class="team-logo">FW</div>
+              <strong>Fire Wolves</strong>
+            </div>
+            <span>VS</span>
+            <div class="team">
+              <div class="team-logo">SK</div>
+              <strong>Skyline Kings</strong>
+            </div>
+          </div>
+          <div class="match-meta">
+            <span>July 22 • 7:00 PM</span>
+            <span>Nova Stadium</span>
+          </div>
+          <button class="btn">See Details</button>
+        </article>
+        <article class="card match-card">
+          <div class="team-row">
+            <div class="team">
+              <div class="team-logo">RT</div>
+              <strong>River Titans</strong>
+            </div>
+            <span>VS</span>
+            <div class="team">
+              <div class="team-logo">SS</div>
+              <strong>Storm Saints</strong>
+            </div>
+          </div>
+          <div class="match-meta">
+            <span>July 25 • 9:00 PM</span>
+            <span>Harbor Arena</span>
+          </div>
+          <button class="btn">See Details</button>
+        </article>
+        <article class="card match-card">
+          <div class="team-row">
+            <div class="team">
+              <div class="team-logo">VR</div>
+              <strong>Vortex Rangers</strong>
+            </div>
+            <span>VS</span>
+            <div class="team">
+              <div class="team-logo">LT</div>
+              <strong>Lunar Tide</strong>
+            </div>
+          </div>
+          <div class="match-meta">
+            <span>July 27 • 6:00 PM</span>
+            <span>Galaxy Bowl</span>
+          </div>
+          <button class="btn">See Details</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    StadiumX Match Directory • Neon grid styling
+  </footer>
+  <script src="scripts/app.js"></script>
+</body>
+</html>

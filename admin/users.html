@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Management | StadiumX</title>
+  <link rel="stylesheet" href="../styles/main.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <div class="brand">
+        <div class="brand-logo">SX</div>
+        Admin Control
+      </div>
+      <nav class="nav-links">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="match-requests.html">Match Requests</a>
+        <a class="active" href="users.html">User Management</a>
+        <a href="../index.html">Home</a>
+      </nav>
+      <button class="btn">Add User</button>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Buyers</h2>
+        <span class="subtle">Active fan accounts.</span>
+      </div>
+      <div class="panel" style="margin-bottom: 40px;">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Role</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Avery Jordan</td>
+              <td>avery@stadiumx.io</td>
+              <td>Buyer</td>
+              <td><span class="badge">Enabled</span></td>
+              <td><button class="btn btn-outline">Disable</button></td>
+            </tr>
+            <tr>
+              <td>Nova Carter</td>
+              <td>nova@stadiumx.io</td>
+              <td>Buyer</td>
+              <td><span class="badge">Enabled</span></td>
+              <td><button class="btn btn-outline">Disable</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section-title">
+        <h2>Organizers</h2>
+        <span class="subtle">Event owners and partners.</span>
+      </div>
+      <div class="panel">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Role</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Stormline Events</td>
+              <td>hello@stormline.io</td>
+              <td>Organizer</td>
+              <td><span class="badge">Enabled</span></td>
+              <td><button class="btn btn-outline">Disable</button></td>
+            </tr>
+            <tr>
+              <td>Harbor Sports</td>
+              <td>contact@harborsports.io</td>
+              <td>Organizer</td>
+              <td><span class="badge">Disabled</span></td>
+              <td><button class="btn">Enable</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    StadiumX Admin • User management panel
+  </footer>
+  <script src="../scripts/app.js"></script>
+</body>
+</html>

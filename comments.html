@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comments Moderation | StadiumX</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <div class="brand">
+        <div class="brand-logo">SX</div>
+        StadiumX Moderation
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="matches.html">Matches</a>
+        <a class="active" href="comments.html">Moderation</a>
+        <a href="admin/dashboard.html">Admin</a>
+      </nav>
+      <button class="btn btn-outline">Moderation Mode</button>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Comments Moderation</h2>
+        <span class="subtle">Review match feedback for admins or organizers.</span>
+      </div>
+      <div class="card-grid">
+        <article class="comment-card">
+          <div class="flex-between">
+            <div>
+              <strong>Match: Skyline Kings vs Fire Wolves</strong>
+              <p class="subtle">User: GlowRunner</p>
+            </div>
+            <span class="subtle">July 22 • 9:18 PM</span>
+          </div>
+          <p>The arena lighting was incredible! Please add more snack options next time.</p>
+          <button class="btn btn-outline" onclick="confirm('Delete this comment?')">Delete</button>
+        </article>
+        <article class="comment-card">
+          <div class="flex-between">
+            <div>
+              <strong>Match: River Titans vs Storm Saints</strong>
+              <p class="subtle">User: TitanFan07</p>
+            </div>
+            <span class="subtle">July 10 • 10:02 PM</span>
+          </div>
+          <p>Great seats but the entry line was slow. Please improve.</p>
+          <button class="btn btn-outline" onclick="confirm('Delete this comment?')">Delete</button>
+        </article>
+        <article class="comment-card">
+          <div class="flex-between">
+            <div>
+              <strong>Match: City Cyclones vs North Giants</strong>
+              <p class="subtle">User: CityPulse</p>
+            </div>
+            <span class="subtle">July 20 • 11:40 PM</span>
+          </div>
+          <p>Epic rivalry game, loved the VIP lounge experience.</p>
+          <button class="btn btn-outline" onclick="confirm('Delete this comment?')">Delete</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    StadiumX Moderation • Twitch-inspired message cards
+  </footer>
+  <script src="scripts/app.js"></script>
+</body>
+</html>
