@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | StadiumX</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <div class="brand">
+        <div class="brand-logo">SX</div>
+        StadiumX Arena
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="matches.html">Matches</a>
+        <a href="register.html">Register</a>
+        <a class="active" href="login.html">Login</a>
+      </nav>
+      <button class="btn">Sign In</button>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container" style="max-width: 520px;">
+      <div class="panel">
+        <h2>Welcome Back</h2>
+        <p class="subtle">Enter the arena with your StadiumX credentials.</p>
+        <form class="form-grid" action="php/login.php" method="post">
+          <div class="input-group">
+            <label for="login-email">Email</label>
+            <input id="login-email" name="email" type="email" placeholder="you@email.com" />
+          </div>
+          <div class="input-group">
+            <label for="login-password">Password</label>
+            <div style="display: flex; gap: 10px;">
+              <input id="login-password" name="password" type="password" placeholder="Password" style="flex: 1;" />
+              <button class="btn btn-outline" type="button" data-toggle-password="login-password">Show</button>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button class="btn" type="submit">Login</button>
+            <button class="btn btn-outline" type="button">Forgot Password</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    StadiumX Login • Twitch-style panel
+  </footer>
+  <script src="scripts/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile | StadiumX</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <div class="brand">
+        <div class="brand-logo">SX</div>
+        StadiumX Arena
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="matches.html">Matches</a>
+        <a class="active" href="profile.html">Profile</a>
+        <a href="my-tickets.html">My Tickets</a>
+      </nav>
+      <button class="btn">Save Profile</button>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="panel">
+        <div class="flex-between">
+          <div>
+            <h2>My Profile</h2>
+            <p class="subtle">Edit your info and organizer details.</p>
+          </div>
+          <div class="toggle-group">
+            <button class="btn btn-outline" type="button" data-edit-toggle="profile-form">Edit</button>
+            <button class="btn" type="button">Save</button>
+            <button class="btn btn-outline" type="button">Cancel</button>
+          </div>
+        </div>
+        <form id="profile-form" class="form-grid" style="margin-top: 20px;">
+          <div class="input-group">
+            <label for="profile-name">Name</label>
+            <input id="profile-name" type="text" value="Avery Jordan" data-locked="true" disabled />
+          </div>
+          <div class="input-group">
+            <label for="profile-email">Email</label>
+            <input id="profile-email" type="email" value="avery@stadiumx.io" data-locked="true" disabled />
+          </div>
+          <div class="input-group">
+            <label for="profile-phone">Phone</label>
+            <input id="profile-phone" type="tel" value="+1 555 210 9911" data-locked="true" disabled />
+          </div>
+          <div class="input-group">
+            <label>Avatar Upload</label>
+            <div class="upload-preview">
+              <div id="avatar-preview" class="preview-image">Preview</div>
+              <input type="file" data-preview-input="avatar-preview" data-locked="true" disabled />
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="org">Organization Name</label>
+            <input id="org" type="text" value="Stormline Events" data-locked="true" disabled />
+          </div>
+          <div class="input-group">
+            <label>Organization Logo</label>
+            <div class="upload-preview">
+              <div id="logo-preview" class="preview-image">Preview</div>
+              <input type="file" data-preview-input="logo-preview" data-locked="true" disabled />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    StadiumX Profile • Editable neon card
+  </footer>
+  <script src="scripts/app.js"></script>
+</body>
+</html>
